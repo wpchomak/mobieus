@@ -1,5 +1,5 @@
 # echoCopy
-# createRoboCopyJobs.ps1
+# runRoboCopyJobs.ps1
 
 This PowerShell script is designed to manage and execute multiple Robocopy jobs concurrently, optimizing the copy process for efficiency. Here's a detailed breakdown of its components and functionality:
 
