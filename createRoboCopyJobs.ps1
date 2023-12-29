@@ -42,7 +42,7 @@ $folderName = Split-Path $SourcePath -Leaf
 
 # Set the path for the batch file with a timestamp and folder name
 $timestamp = Get-Date -Format "yyyyMMdd-HHmmss"
-$BatchFile = "D:\Fuji\RobocopyJobs_${folderName}_$timestamp.txt"
+$BatchFile = "c:\temp\RobocopyJobs_${folderName}_$timestamp.txt"
 
 # Option to include exclusion of "$RECYCLE.BIN" directory
 $ExcludeRecycleBin = $true
