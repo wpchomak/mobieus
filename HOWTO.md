@@ -1,1 +1,6 @@
-
+1. To ensure optimal performance, execute the scripts from an Azure Windows Virtual Machine (VM) that is located in the same region as either the Source or the Destination Storage Account.
+2. Establish logical drive mappings for both the Source and the Destination storage locations.
+3. Set up a directory for log files. By default, the script uses d:\echoCopy, but you can modify this location as necessary.
+4. Execute createRobocopyJobs.ps1. This will open Windows Explorer to facilitate easy navigation to the Source and Destination. If the Explorer window appears in the background, use Alt-Tab to bring it to the forefront. Upon completion, a text file containing all Robocopy job commands will be created. However, this file requires manual editing (fix in progress). Modify the beginning of each command from 'start robocopy ' to '{robocopy ', and change the end from 'log"' to 'log"},'. Note that the final command in the file should not have a comma at the end. Additionally, a 'Logs' subdirectory will be created containing a folder for each job, where the corresponding log files for error checking and troubleshooting will be stored.
+5. Copy all the job commands from the generated text file to your clipboard.
+6. Open runRoboCopyJobs.ps1, paste the copied job commands over lines 3-6, and run the script.
