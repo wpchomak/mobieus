@@ -1,7 +1,7 @@
 # Define Robocopy jobs as script blocks
 $robocopyJobs = @(
-    {robocopy "M:\Test\Dir1" "N:\Test\Dir1" /mir /MT:64 /e /zb /r:0 /w:0 /copy:dat /xo /is /xd "$RECYCLE.BIN" /np /log:"D:\Fuji\Logs\Test_Dir1\Dir1-MT64-20231229-073258.log"},
-    {robocopy "M:\Test\Dir999" "N:\Test\Dir2" /mir /MT:64 /e /zb /r:0 /w:0 /copy:dat /xo /is /xd "$RECYCLE.BIN" /np /log:"D:\Fuji\Logs\Test_Dir2\Dir2-MT64-20231229-073300.log"}
+    {robocopy "M:\Test\Dir1" "N:\Test\Dir1" /mir /MT:64 /e /zb /r:0 /w:0 /copy:dat /xo /is /xd "$RECYCLE.BIN" /np /log:"c:\temp\Logs\Test_Dir1\Dir1-MT64-20231229-073258.log"},
+    {robocopy "M:\Test\Dir999" "N:\Test\Dir2" /mir /MT:64 /e /zb /r:0 /w:0 /copy:dat /xo /is /xd "$RECYCLE.BIN" /np /log:"c:\temp\Logs\Test_Dir2\Dir2-MT64-20231229-073300.log"}
 
     # Add more Robocopy commands as needed
 )
